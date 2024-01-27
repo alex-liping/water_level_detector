@@ -7,5 +7,7 @@ basic.forever(function () {
         music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.InBackground)
         pins.digitalWritePin(DigitalPin.P2, 1)
         basic.pause(5000)
+    } else {
+        pins.digitalWritePin(DigitalPin.P2, 0)
     }
 })
